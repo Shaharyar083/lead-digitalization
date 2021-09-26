@@ -1,0 +1,383 @@
+@font-face {
+  font-family: sofia-pro;
+  src: url("../../assets/Fonts/sofiapro-light.otf");
+}
+
+.section3 {
+  margin-top: 9rem;
+  background: linear-gradient(180deg, #fff 85%, #f5f5f5 0);
+  //   height: 140vh;
+  .inner {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    .content {
+      width: 45%;
+      padding: 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .product-header {
+        width: 60%;
+        background-image: linear-gradient(#fff, #fff),
+          linear-gradient(#e0ff5c, #e0ff5c);
+        background-size: 100% 20px, 100%;
+        background-repeat: no-repeat;
+
+        h1 {
+          font-family: "silka_monomedium", sans-serif;
+          font-style: normal;
+          color: #4156f5;
+          font-weight: 700;
+          letter-spacing: 0.5rem;
+          line-height: 1;
+          font-size: 2.9rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      h2 {
+        font-size: 19px;
+        font-family: "sofia-pro", sans-serif;
+        font-weight: 500;
+        line-height: 1.4;
+        color: #4156f5;
+        margin-top: 2rem;
+      }
+      h3 {
+        width: 80%;
+        font-size: 16px;
+        font-family: "sofia-pro", sans-serif;
+        font-weight: 300;
+        line-height: 1.4;
+        color: #4156f5;
+        margin-top: 2rem;
+      }
+    }
+
+    .accordion {
+      width: 55%;
+      //   position: relative;
+      border-radius: 20px;
+      margin: 0rem 2rem 0rem 0rem;
+      background-color: #fff;
+
+      .open {
+        cursor: pointer;
+        // position: relative;
+        padding: 1.8rem 2rem;
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+        //   border: 0 solid transparent;
+        border-radius: 20px;
+        // overflow: hidden;
+        // background-color: #fff;
+        transition: all 100s ease-in;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin: 2px 0px;
+
+        .text {
+          color: #4156f5;
+          font-family: "sofia-pr" o, sans-serif;
+          font-weight: 600;
+          font-size: 19px;
+        }
+      }
+
+      .show {
+        background-color: #4156f5;
+        border-radius: 20px;
+        padding: 2rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 7px 12px rgb(0 0 0 / 20%);
+        animation: smooth 0.8s ease-out;
+
+        .line {
+          margin: 0.3rem 0 1.5rem;
+          width: 3rem;
+          height: 5px;
+          background-color: #e0ff5c;
+        }
+
+        h1 {
+          font-family: "sofia-pro", sans-serif;
+          font-size: 19px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          text-align: left;
+          color: white;
+        }
+
+        h2 {
+          width: 60%;
+          font-family: "sofia-pro", sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 1.4rem;
+          color: white;
+        }
+
+        .d-2 {
+          margin-top: 2rem;
+        }
+
+        .image {
+          position: absolute;
+          top: 9%;
+          right: -1%;
+          img {
+            width: 290px;
+          }
+        }
+      }
+
+      .dis {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes smooth {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #4156f5;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .section3 {
+    margin-top: 8rem;
+
+    .inner {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        width: 100%;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .product-header {
+          width: 40%;
+        }
+
+        h2 {
+          margin-top: 1.5rem;
+        }
+
+        h3 {
+          width: 550px;
+          margin-top: 1.5rem;
+        }
+      }
+
+      .accordion {
+        width: 650px;
+        margin: 3rem 0rem 0rem 0rem;
+
+        .show {
+          h2 {
+            width: 400px;
+          }
+
+          .d-2 {
+            margin-top: 2rem;
+          }
+
+          .image {
+            img {
+              width: 250px;
+            }
+          }
+        }
+
+        .dis {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .section3 {
+    margin-top: 8rem;
+
+    .inner {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        width: 100%;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .product-header {
+          width: 40%;
+        }
+
+        h2 {
+          margin-top: 1.5rem;
+        }
+
+        h3 {
+          width: 550px;
+          margin-top: 1.5rem;
+        }
+      }
+
+      .accordion {
+        width: 650px;
+        margin: 3rem 0rem 0rem 0rem;
+
+        .show {
+          h2 {
+            width: 400px;
+          }
+
+          .d-2 {
+            margin-top: 2rem;
+          }
+
+          .image {
+            img {
+              width: 250px;
+            }
+          }
+        }
+
+        .dis {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section3 {
+    margin-top: 6rem;
+
+    .inner {
+      .content {
+        .product-header {
+          width: 90%;
+        }
+
+        h2 {
+          margin-top: 1.5rem;
+        }
+
+        h3 {
+          width: 90%;
+          margin-top: 1.5rem;
+        }
+      }
+
+      .accordion {
+        width: 90%;
+
+        .show {
+          h2 {
+            width: 70%;
+          }
+
+          .d-2 {
+            margin-top: 2rem;
+          }
+
+          .image {
+            top: 30%;
+            img {
+              width: 220px;
+            }
+          }
+        }
+
+        .dis {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section3 {
+    margin-top: 6rem;
+
+    .inner {
+      .content {
+        .product-header {
+          width: 80%;
+
+          h1 {
+            font-size: 2rem;
+          }
+        }
+
+        h2 {
+          margin-top: 1.5rem;
+          font-size: 17px;
+        }
+
+        h3 {
+          width: 90%;
+          margin-top: 1.5rem;
+          font-size: 15px;
+        }
+      }
+
+      .accordion {
+        width: 90%;
+        margin: 2rem 0rem 0rem 0rem;
+        .show {
+          h2 {
+            width: 90%;
+            font-size: 14px;
+          }
+
+          .d-2 {
+            margin-top: 2rem;
+          }
+
+          .image {
+            top: 45%;
+            img {
+              width: 120px;
+            }
+          }
+        }
+
+        .dis {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+@font-face {
+  font-family: sofia-pro;
+  src: url("../../assets/Fonts/sofiapro-light.otf");
+}
+
+.navbar {
+  font-family: "sofia-pro", sans-serif;
+  font-size: 19px;
+  background-color: #4156f5 !important;
+  padding: 3.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    max-width: 100%;
+    width: 170px;
+    height: auto;
+  }
+
+  .links {
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin: 0px 2rem;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &::after {
+        margin-top: 0.3rem;
+        content: "";
+        display: block;
+        width: 0;
+        height: 7px;
+        background: #e0ff5c;
+        transition: width 0.2s ease-in;
+      }
+
+      &:hover::after {
+        width: 100%;
+        //transition: width .3s;
+      }
+    }
+  }
+
+  .login-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    .language {
+      .bar {
+        margin: 0px 1rem;
+      }
+
+      .light {
+        color: white;
+        cursor: pointer;
+      }
+
+      .dark {
+        color: #232d3c;
+        cursor: pointer;
+      }
+    }
+
+    .login {
+      text-align: center;
+      border: 1px solid white;
+      cursor: pointer;
+      padding: 10px 0px 6px 0px;
+      font-weight: 600;
+      border-radius: 0.3rem;
+      min-width: 140px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .navbar {
+    padding: 3.5rem 2rem;
+
+    img {
+      width: 170px;
+    }
+
+    .links {
+      a {
+        margin: 0px 1rem;
+      }
+    }
+
+    .login-div {
+      .language {
+        .bar {
+          margin: 0px 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding: 2rem;
+
+    img {
+      width: 150px;
+    }
+
+    .links {
+      display: none;
+    }
+
+    .login-div {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 1.2rem;
+
+    img {
+      width: 120px;
+    }
+  }
+}
